@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/************************************main page*************************************/
+
+.home-page {
+    height: 100vh;
+    background: url("./images/home.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .instructions {
+    text-align: center;
+    width: 25vw;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.home-page .instructions p {
+    color: white;
+}
+
+.home-page input[type="startButton"] {
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid white;
+    text-align: center;
+    width: 8vw;
+    height: 5vh;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.home-page input[type="startButton"]:hover {
+    border: 1px solid orange;
+    box-shadow: 1px 5px 5px orange;
+    border-radius: 1.2rem;
+    transition: border-radius 1s ease-in-out;
+}
+
+
+/************************************game page*************************************/
+
+.game {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 60vw 1fr;
+}
+
+.container-game {
+    height: 100vh;
+    display: grid;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    grid-template-rows: repeat(25, 4vh);
+    grid-template-columns: repeat(30, 2vw);
+}
+
+.tools {
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool {
+    display: flex;
+    height: 15vh;
+    width: 6vw;
+    border: 1px solid grey;
+    margin: 1.5rem;
+    color: #fff;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.tool:hover {
+    cursor: pointer;
+}
+
+.axe {
+    background: url("./images/axe.png") no-repeat center;
+}
+
+.pickAxe {
+    background: url("./images/pickaxe.png") no-repeat center;
+}
+
+.shovel {
+    background: url("./images/shovel.png") no-repeat center;
+}
+
+.reset {
+    width: 8vw;
+    height: 5vh;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inventory {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile {
+    height: 70px;
+    width: 6vw;
+    border: 3px solid goldenrod;
+    margin: 0.8rem;
+    font-weight: bolder;
+    font-size: 32px;
+    color: darkturquoise;
+}
+
+.tile:hover {
+    cursor: pointer;
+}
+
+.tGrass {
+    background: url('./images/grass.jpg')no-repeat center center/cover;
+}
+
+.tSoil {
+    background: url('./images/soil.jpg')no-repeat center center/cover;
+}
+
+.tTreeTrunck {
+    background: url('./images/treeTrunck.jpg')no-repeat center center/cover;
+}
+
+.tTreeLeaves {
+    background: url('./images/treeLeaves.jpg')no-repeat center center/cover;
+}
+
+.tRock {
+    background: url('./images/rock.jpg')no-repeat center center/cover;
+}
+
+.tile span {
+    font-weight: bolder;
+    background: honeydew;
+}
+
+.box {
+    cursor: pointer;
+}
+
+.box:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.sky {
+    background: rgb(149, 215, 241);
+}
+
+.cloud {
+    background: white;
+}
+
+.cloud:hover {
+    border: 1px solid black;
+}
+
+.grass {
+    background: url('./images/grass.jpg')no-repeat center center/cover;
+}
+
+.soil {
+    background: url('./images/soil.jpg')no-repeat center center/cover;
+}
+
+.treeTrunck {
+    background: url('./images/treeTrunck.jpg')no-repeat center center/cover;
+}
+
+.treeLeaves {
+    background: url('./images/treeLeaves.jpg')no-repeat center center/cover;
+}
+
+.rock {
+    background: url('./images/rock.jpg')no-repeat center center/cover;
+}
+
+@media(max-height: 500px) {
+    .home-page .instructions {
+        text-align: center;
+        width: 70vw;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 50px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .tool {
+        display: flex;
+        height: 15vh;
+        width: 8vw;
+        border: 1px solid grey;
+        margin: 0.8rem;
+        color: #fff;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 12px;
+    }
+    .reset {
+        width: 8vw;
+        height: 5vh;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .axe {
+        background-size: 80%;
+    }
+    .pickAxe {
+        background-size: 80%;
+    }
+    .shovel {
+        background-size: 80%;
+    }
+    .tile {
+        margin: 0.3rem;
+        font-size: 20px;
+    }
+}
